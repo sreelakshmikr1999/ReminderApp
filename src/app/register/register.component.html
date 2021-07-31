@@ -1,0 +1,18 @@
+<div class="bkgd">
+    <div class="center">
+        <form (ngSubmit)="register()" [formGroup]="registerForm">
+            <h4>Register</h4>
+            <hr>
+            <input class="form-control mt-3" type="text"  name="uname" formControlName="uname" placeholder="Username" >
+            <div class="error" *ngIf="(this.registerForm.get('uname')?.touched || this.registerForm.get('uname')?.dirty)&& this.registerForm.get('uname')?.errors">Invalid username</div>
+            <input class="form-control mt-3" type="text"  name="ac" formControlName="acno" placeholder="Account Number">
+            <div class="error" *ngIf="(this.registerForm.get('acno')?.touched || this.registerForm.get('acno')?.dirty)&&this.registerForm.get('acno')?.errors">Account Number is invalid or already taken</div> 
+            <input class="form-control mt-3" type="password" name="pswd"  formControlName="pswd" placeholder="Password">
+            <div class="error" *ngIf="(this.registerForm.get('pswd')?.touched || this.registerForm.get('pswd')?.dirty)&&this.registerForm.get('pswd')?.errors">Make sure it's at least 8 characters</div>
+            <button type="submit" class="btn btn-outline-warning me-3 mt-3" name="button" >REGISTER</button>
+        </form>
+        <br><br>
+        <br>
+        <div style="font-size: 13px; font-weight: 500;" >ALREADY HAVE AN ACCOUNT? <a routerLink="/login" >Signin</a></div>
+    </div>
+</div>

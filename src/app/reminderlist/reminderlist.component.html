@@ -1,0 +1,21 @@
+<h2>Transaction Details</h2>
+<br>
+<div class="container">
+        <table class="table">
+            <thead>
+                <tr class="table-dark">
+                    <th>Amount</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-secondary" *ngFor="let reminder of reminders">
+                    <td >{{reminder.date}}</td>
+                    <td>{{reminder.reminder}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+<a routerLink="/dashboard">Back to Home</a>
+</div>

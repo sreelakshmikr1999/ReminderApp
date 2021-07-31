@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+.bkgd{
+    background-color:#fae065 ;
+    background-size: 100% 100%;
+    height: 650px;
+
+}
+.center {
+    position: absolute;
+    top:150px;
+    left:500px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2%;
+    border: 0px solid ;
+    position: relative
+}
+h1,h2{
+    font-size: 50px;
+    font-weight: bolder; 
+    font-family: 'Otomanopee One', sans-serif;
+}
+h2{
+    font-weight: lighter;
+    font-size: 30px;
+}
+.error{
+    color: red;
+    font-size: smaller;
+}
